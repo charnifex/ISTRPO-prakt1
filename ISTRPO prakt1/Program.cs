@@ -14,16 +14,16 @@ static void PrintByColumns(double[,] matrix, int n, int m)
 
 int n, m;
 Console.Write("n = ");
-while (!int.TryParse(Console.ReadLine(), out n) || n <=0)
+while (!int.TryParse(Console.ReadLine(), out n) || n <=0 || n >= 10)
 {
-    Console.WriteLine("введите целое число (без букв и пробелов)");
+    Console.WriteLine("введите целое число (без букв и пробелов) меньше 10");
     Console.Write("n = ");
 }
 
 Console.Write("m = ");
-while (!int.TryParse(Console.ReadLine(), out m) || m <=0)
+while (!int.TryParse(Console.ReadLine(), out m) || m <=0 || m >= 10)
 {
-    Console.WriteLine("введите целое число (без букв и пробелов)");
+    Console.WriteLine("введите целое число (без букв и пробелов) меньше 10");
     Console.Write("m = ");
 }
 
